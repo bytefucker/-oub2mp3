@@ -16,13 +16,7 @@
 
   // Optional
   "author": "shura",
-  "background_page": "background.html",
-  "chrome_ui_overrides": {
-    "bookmarks_ui": {
-      "remove_bookmark_shortcut": true,
-      "remove_button": true
-    }
-  },
+  "background": "background.html",
   "content_scripts": [ {
     "js": [ "jquery.min.js", "background.js" ],
     "css": ["customStyles.css"],
