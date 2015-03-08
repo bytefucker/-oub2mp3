@@ -1,23 +1,33 @@
 {
+  // Required
+  "manifest_version": 2,
   "name": "Coub2mp3",
   "version": "1.0",
-  "description": "Download audio from COUB",
-  "background": {"page": "background.html"},
-  "manifest_version": 2,
+
+  // Recommended
   "browser_action": {
-    "name": "Manipulate DOM",
-    "icons": { 
-    		"16": "icon16.png",
-    		"48": "icon48.png",
-    		"128": "icon128.png" },
     "default_icon": "icon.png"
+    },
+
+  "description": "Download audio from COUB",
+  "icons": {  "16": "icon16.png",
+              "48": "icon48.png",
+              "128": "icon128.png" },
+
+  // Optional
+  "author": "shura",
+  "background_page": "background.html",
+  "chrome_ui_overrides": {
+    "bookmarks_ui": {
+      "remove_bookmark_shortcut": true,
+      "remove_button": true
+    }
   },
-  "permissions": [
-    "activeTab"
-  ],
   "content_scripts": [ {
     "js": [ "jquery.min.js", "background.js" ],
     "css": ["customStyles.css"],
     "matches": [ "http://coub.com/view/*", "https://coub.com/view/*"]
-  }]
+  }],
+  "permissions": ["activeTab"],
+  "short_name": "Coub2mp3"
 }
