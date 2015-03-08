@@ -1,18 +1,12 @@
-$( window ).load(function(){
+$( window ).load(function (){
 
 $(".coubDescription").append($('<input type="button" id="btnAudio" class="myButton" value="mp3">'));
 
-
 $("#btnAudio").click(function() {
-    var divs = $(".data");
-    for (i = 0; i < divs.length; i++) {
-        var original = (divs[i].innerHTML);
-    }
-    // removing tags
-    var str = original.replace(/<\/?[^>]+>/gi, '');
+    var str = $('script[type="text/json"]').first().html();
     var obj = JSON.parse(str);
-    var url = (obj['file_versions']['mobile']['audio_url']);
-    var name = (obj['title']);
+    var template = obj['audio_versions']['template'];
+    var url = template.replace("%{version}", "high");
     window.open(url, '_blank');
     });
 });

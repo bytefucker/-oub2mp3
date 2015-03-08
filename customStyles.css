@@ -1,7 +1,7 @@
 .myButton {
 
-margin-top: 8px;	
--moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
+	margin-top: 8px;	
+	-moz-box-shadow: 0px 1px 0px 0px #f0f7fa;
 	-webkit-box-shadow: 0px 1px 0px 0px #f0f7fa;
 	box-shadow: 0px 1px 0px 0px #f0f7fa;
 	background:-webkit-gradient(linear, left top, left bottom, color-stop(0.05, #33bdef), color-stop(1, #019ad2));
@@ -38,34 +38,33 @@ margin-top: 8px;
 .myButton:active {
 	position:relative;
 	top:1px;
-.myButton {
--moz-box-shadow:0 1px 0 0 #f0f7fa;
--webkit-box-shadow:0 1px 0 0 #f0f7fa;
-box-shadow:0 1px 0 0 #f0f7fa;
-background:linear-gradient(tobottom,#33bdef5%,#019ad2100%);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef',endColorstr='#019ad2',GradientType=0);
-background-color:#33bdef;
--moz-border-radius:6px;
--webkit-border-radius:6px;
-border-radius:6px;
-border:1px solid #057fd0;
-display:inline-block;
-cursor:pointer;
-color:#fff;
-font-family:Arial;
-font-size:15px;
-text-decoration:none;
-text-shadow:0 -1px 0 #5b6178;
-padding:6px 24px;
+	-moz-box-shadow:0 1px 0 0 #f0f7fa;
+	-webkit-box-shadow:0 1px 0 0 #f0f7fa;
+	box-shadow:0 1px 0 0 #f0f7fa;
+	background:linear-gradient(tobottom,#33bdef5%,#019ad2100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#33bdef',endColorstr='#019ad2',GradientType=0);
+	background-color:#33bdef;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	border-radius:6px;
+	border:1px solid #057fd0;
+	display:inline-block;
+	cursor:pointer;
+	color:#fff;
+	font-family:Arial;
+	font-size:15px;
+	text-decoration:none;
+	text-shadow:0 -1px 0 #5b6178;
+	padding:6px 24px;
 }
 
 .myButton:hover {
-background:linear-gradient(tobottom,#019ad25%,#33bdef100%);
-filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2',endColorstr='#33bdef',GradientType=0);
-background-color:#019ad2;
+	background:linear-gradient(tobottom,#019ad25%,#33bdef100%);
+	filter:progid:DXImageTransform.Microsoft.gradient(startColorstr='#019ad2',endColorstr='#33bdef',GradientType=0);
+	background-color:#019ad2;
 }
 
 .myButton:active {
-position:relative;
-top:1px;
+	position:relative;
+	top:1px;
 }
