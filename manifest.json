@@ -1,0 +1,23 @@
+{
+  "name": "Coub2mp3",
+  "version": "1.0",
+  "description": "Download audio from COUB",
+  "background": {"page": "background.html"},
+  "manifest_version": 2,
+  "browser_action": {
+    "name": "Manipulate DOM",
+    "icons": { 
+    		"16": "icon16.png",
+    		"48": "icon48.png",
+    		"128": "icon128.png" },
+    "default_icon": "icon.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  "content_scripts": [ {
+    "js": [ "jquery.min.js", "background.js" ],
+    "css": ["customStyles.css"],
+    "matches": [ "http://coub.com/view/*", "https://coub.com/view/*"]
+  }]
+}
